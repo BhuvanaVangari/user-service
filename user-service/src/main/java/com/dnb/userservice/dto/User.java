@@ -35,7 +35,7 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "user_seq")
 	
-	@GenericGenerator(name = "user_seq", strategy = "com.dnb.DevConnector.utils.CustomIdGenerator",
+	@GenericGenerator(name = "user_seq", strategy = "com.dnb.userservice.utils.CustomIdGenerator",
 	parameters =  {@Parameter(name=CustomIdGenerator.INCREMENT_PARAM,value="50"),
 			@Parameter(name=CustomIdGenerator.FLAG_PARAMETER,value="false"),
 			@Parameter(name=CustomIdGenerator.VALUE_PREFIX_PARAMETER,value="User_"),
